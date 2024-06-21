@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <form action="">
+            <h1 class="grid-col-span-2">Contact Us</h1>
+
+            <div class="fname"><label for="fname">First Name <sup style="color: hsl(169, 82%, 27%);">*</sup></label><br>
+            <input type="text" id="fname" name="fname" ><br>
+            <span id="fname-error" class="error"></span></div>
+
+            <div class="lname"><label for="lname">Last Name <sup style="color: hsl(169, 82%, 27%);">*</sup></label><br>
+            <input type="text" id="lname" name="lname" ><br>
+            <span id="lname-error" class="error"></span></div>
+
+            <div class="email grid-col-span-2"><label for="email">Email Address <sup style="color: hsl(169, 82%, 27%);">*</sup></label><br>
+            <input type="email" id="email" name="email" >
+            <span id="email-error" class="error"></span></div>
+
+            <div class="query grid-col-span-2"><label for="query">Query Type <sup style="color: hsl(169, 82%, 27%);">*</sup></label><br>
+            <input type="radio" name="query" id="general" value="general">General Enquiry
+            <input type="radio" name="query" id="support" value="support">Support Request <br>
+            <span id="query-error" class="error"></span></div>
+
+            <div class="message grid-col-span-2"><label for="message">Message <sup style="color: hsl(169, 82%, 27%);">*</sup></label><br>
+            <textarea name="message" id="message" ></textarea>
+            <span id="message-error" class="error"></span></div>
+
+            <div class="checkbox grid-col-span-2"><input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+            <label for="checkbox">I consent to being contacted by the team <sup style="color: hsl(169, 82%, 27%);">*</sup></label><br>
+            <span id="checkbox-error" class="error"></span></div>
+
+            <div class="button grid-col-span-2"><button type="submit" onclick= "return validateForm()">Submit</button></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
